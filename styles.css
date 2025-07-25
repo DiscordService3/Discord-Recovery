@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #5865F2;
+  background-image: url('assets/logo-background.svg'); /* host this locally */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  display: flex;
+  background-color: #2f3136;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  width: 700px;
+  max-width: 90%;
+}
+
+.form-section,
+.qr-section {
+  padding: 40px 30px;
+  flex: 1;
+  color: white;
+}
+
+.discord-logo {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 50px;
+  border-radius: 9px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  color: #b9bbbe;
+  text-align: center;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #202225;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background: #5865F2;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background: #4752c4;
+}
+
+.qr-section {
+  background-color: #202225;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-section img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.qr-section p {
+  text-align: center;
+}
