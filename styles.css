@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: #5865F2;
-  background-image: url('assets/logo-background.svg'); /* host this locally */
+  background-image: url('assets/logo-background.svg'); /* Ensure this is hosted locally */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -15,9 +15,10 @@ body {
   display: flex;
   background-color: #2f3136;
   border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   width: 700px;
   max-width: 90%;
+  overflow: hidden;
 }
 
 .form-section,
@@ -31,7 +32,9 @@ body {
   display: block;
   margin: 0 auto 20px auto;
   width: 50px;
-  border-radius: 9px;
+  height: 50px;
+  border-radius: 12px;
+  object-fit: contain;
 }
 
 h2 {
@@ -53,6 +56,8 @@ p {
 label {
   display: block;
   margin-bottom: 5px;
+  font-size: 13px;
+  color: #dcddde;
 }
 
 input[type="email"],
@@ -60,9 +65,17 @@ input[type="password"] {
   width: 100%;
   padding: 10px;
   background-color: #202225;
-  border: none;
+  border: 1px solid #202225;
   color: white;
   border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #5865F2;
+  outline: none;
 }
 
 .button {
@@ -75,6 +88,7 @@ input[type="password"] {
   font-size: 16px;
   cursor: pointer;
   margin-top: 10px;
+  transition: background 0.2s ease;
 }
 
 .button:hover {
@@ -87,6 +101,8 @@ input[type="password"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #dcddde;
+  font-size: 14px;
 }
 
 .qr-section img {
@@ -97,4 +113,8 @@ input[type="password"] {
 
 .qr-section p {
   text-align: center;
+}
+
+.icon {
+  border-radius: 9px;
 }
